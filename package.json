@@ -5,6 +5,8 @@
   "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --config ./eslint.config.mjs ./",
+    "format": "prettier --write './**/*.{ts,js,json}'",
     "start": "node ./dist/index.js",
     "dev": "nodemon --exec ts-node index.ts",
     "prepare": "husky"
